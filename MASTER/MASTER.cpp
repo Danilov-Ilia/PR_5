@@ -11,14 +11,14 @@ int main()
 
     printf("MASTER: Started\n");
 
-    while (1) {  // бесконечный цикл для ожидания установки события и вывода "*"
-        WaitForSingleObject(hEvent, INFINITE); // ожидаем установку события
+    while (1) { 
+        WaitForSingleObject(hEvent, INFINITE); 
 
         printf("*");
 
-        fflush(stdout); // принудительно очищаем буфер вывода
+        fflush(stdout); 
 
-        ResetEvent(hEvent); // сбрасываем событие после его использования
+        ResetEvent(hEvent); 
 
     }
 
