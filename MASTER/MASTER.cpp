@@ -14,7 +14,7 @@ int main()
     while (1) { 
         WaitForSingleObject(hEvent, INFINITE); 
 
-        printf("*");
+        printf("*+.*");
 
         fflush(stdout); 
 
